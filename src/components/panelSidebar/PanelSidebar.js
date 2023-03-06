@@ -8,13 +8,18 @@ import { BsCalendarEventFill, BsFillGearFill, BsSearch } from "react-icons/bs";
 import classes from "./PanelSidebar.module.css";
 import { useUser } from "../../context/UserContext";
 const PanelSidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const { logout } = useUser();
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
   const navigate = useNavigate();
   return (
     <nav
       id="sidebarMenu"
       className={"col-md-4 col-lg-3 d-md-block collapse " + classes.sidebar}
     >
+      <h2>hi</h2>
       <div className="position-sticky pt-3">
         <div>
           <h2 className={classes.logo}>Admin Panel</h2>

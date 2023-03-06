@@ -8,3 +8,6 @@
 .page a {
   color: var(--accentColor) !important;
 }
+.inp {
+  max-width: 250px;
+}

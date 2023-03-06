@@ -57,7 +57,11 @@ export const data = {
 
 export function DoubleLineChart() {
   return (
-    <div className={classes.lineChart + " "}>
+    <div
+      className={
+        classes.lineChart + " d-flex justify-content-center align-items-center"
+      }
+    >
       <Line options={options} data={data} />
     </div>
   );

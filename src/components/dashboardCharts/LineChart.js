@@ -54,7 +54,11 @@ const data = {
 
 export function LineChart() {
   return (
-    <div className={classes.lineChart + " "}>
+    <div
+      className={
+        classes.lineChart + " justify-content-center align-items-center"
+      }
+    >
       <Line options={options} data={data} />
     </div>
   );

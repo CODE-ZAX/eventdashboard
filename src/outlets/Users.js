@@ -13,12 +13,12 @@ const Users = () => {
         <strong className={classes.mainText}>Users</strong>
       </h4>
       <h5 className="my-2">Search</h5>
-      <nav className="d-flex justify-content-around align-items-center mb-3">
-        <div className="input-group me-3">
+      <nav className="d-flex flex-wrap justify-content-between align-items-center mb-3">
+        <div className={"input-group " + classes.inp}>
           <span className="input-group-text">ID</span>
           <input type="text" className="form-control" placeholder="Search Id" />
         </div>
-        <div className="input-group me-3">
+        <div className={"input-group " + classes.inp}>
           <span className="input-group-text">
             <MdEmail size={16} />
           </span>
@@ -28,7 +28,7 @@ const Users = () => {
             placeholder="Search Email"
           />
         </div>
-        <div className="input-group me-3">
+        <div className={"input-group " + classes.inp}>
           <span className="input-group-text">
             <FaUserAlt size={16} />
           </span>
@@ -38,7 +38,7 @@ const Users = () => {
             placeholder="Search Username"
           />
         </div>
-        <div className="input-group me-3">
+        <div className={"input-group " + classes.inp}>
           <span className="input-group-text">
             <BsTelephoneFill size={16} />
           </span>

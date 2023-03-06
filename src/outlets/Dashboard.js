@@ -64,7 +64,7 @@ const Dashboard = () => {
           </div>
         </div>
         <h5 className="my-3">Users Statistics</h5>
-        <div className="d-flex flex-wrap ">
+        <div className="d-flex flex-wrap align-items-center justify-content-evenly">
           <div className={" " + classes.bg}>
             <LineChart />
           </div>
@@ -73,7 +73,9 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="mt-5 container">
-          <Table data={tableData} />
+          <div className={classes.tableResponsive + " table-responsive"}>
+            <Table data={tableData} />
+          </div>
         </div>
       </div>
     </div>
