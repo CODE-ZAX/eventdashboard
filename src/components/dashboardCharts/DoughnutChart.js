@@ -33,8 +33,12 @@ const data = {
 export function DougnutChart() {
   return (
     <div className={classes.doughnut}>
-      <Doughnut data={data} />
-      <PieChart />
+      <div className={classes.chart}>
+        <Doughnut data={data} />
+      </div>
+      <div className={classes.chart}>
+        <PieChart />
+      </div>
     </div>
   );
 }

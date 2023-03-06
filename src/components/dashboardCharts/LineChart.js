@@ -54,7 +54,7 @@ const data = {
 
 export function LineChart() {
   return (
-    <div className={classes.lineChart + " d-flex align-items-center"}>
+    <div className={classes.lineChart + " "}>
       <Line options={options} data={data} />
     </div>
   );

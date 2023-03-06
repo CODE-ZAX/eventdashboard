@@ -1,6 +1,8 @@
 import React from "react";
+import { useData } from "../../context/DataContext";
 import classes from "./Tickets.module.css";
-const Tickets = ({ tickets }) => {
+const Tickets = ({}) => {
+  const { tickets } = useData();
   return (
     <div>
       <h5 className="text-center pt-2">Active Tickets</h5>

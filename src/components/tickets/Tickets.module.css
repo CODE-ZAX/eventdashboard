@@ -76,3 +76,9 @@
   object-fit: cover;
   object-position: center;
 }
+@media only screen and (min-width: 1515px) {
+  .ticket {
+    width: 400px;
+    height: auto;
+  }
+}
