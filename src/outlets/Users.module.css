@@ -1,0 +1,10 @@
+.mainText {
+  color: var(--accentColor);
+}
+.btnCustom {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.page a {
+  color: var(--accentColor) !important;
+}

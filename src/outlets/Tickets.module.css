@@ -1,0 +1,73 @@
+.mainText {
+  color: var(--accentColor);
+}
+.btnCustom {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.btnCustom:hover {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.page a {
+  color: var(--accentColor) !important;
+}
+
+.ticket {
+  position: relative;
+  background-color: #1b2030;
+  width: 450px;
+  height: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+  z-index: 0;
+  border-radius: 10px;
+}
+.ticket::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  right: -10px;
+  border-radius: 50%;
+  top: 45%;
+  z-index: 1;
+}
+.ticket::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  z-index: 1;
+  left: -10px;
+  border-radius: 50%;
+  top: 45%;
+}
+.ticketDetails {
+  padding: 10px 10px 10px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ticketDetails h6 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.ticketDetails small {
+  font-size: 12px;
+}
+
+.ticketImage {
+}
+.ticketImage img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,0 +1,6 @@
+.thead th {
+  background-color: var(--primaryColor) !important;
+}
+.customBtn {
+  background-color: var(--accentColor);
+}
