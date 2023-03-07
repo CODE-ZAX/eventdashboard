@@ -10,6 +10,9 @@ const Tickets = () => {
     location: "Las Angel, USA",
     image: poker,
   };
+
+  const ls = [1, 2, 3, 4, 5, 6];
+
   const TICK = (
     <div className={classes.ticket + " me-3"}>
       <div className={classes.ticketDetails}>
@@ -33,12 +36,12 @@ const Tickets = () => {
         <strong>Tickets</strong>
       </h4>
       <h5>Search</h5>
-      <nav className="d-flex justify-content-around align-items-center mb-3">
-        <div className="input-group me-3">
+      <nav className="d-flex flex-wrap justify-content-between align-items-center mb-3">
+        <div className={"input-group " + classes.inp}>
           <span className="input-group-text">ID</span>
           <input type="text" className="form-control" placeholder="Search Id" />
         </div>
-        <div className="input-group me-3">
+        <div className={"input-group " + classes.inp}>
           <span className="input-group-text">
             <BsCalendarEventFill size={16} />
           </span>
@@ -48,7 +51,7 @@ const Tickets = () => {
             placeholder="Search Event"
           />
         </div>
-        <div className="input-group me-3">
+        <div className={"input-group " + classes.inp}>
           <span className="input-group-text">
             <BsCalendarDateFill size={16} />
           </span>
@@ -58,7 +61,7 @@ const Tickets = () => {
             placeholder="Search Date"
           />
         </div>
-        <div className="input-group me-3">
+        <div className={"input-group " + classes.inp}>
           <span className="input-group-text">
             <IoLocationSharp size={16} />
           </span>
@@ -74,18 +77,11 @@ const Tickets = () => {
       </nav>
       <h5 className="my-3">Active Tickets</h5>
       <div className="d-flex justify-content-evenly align-items-center">
-        <div>
-          <div className="row g-0 justify-content-between">
-            <div className="col-5">{TICK}</div>
-            <div className="col-5">{TICK}</div>
-          </div>
-          <div className="row g-0 justify-content-between">
-            <div className="col-5">{TICK}</div>
-            <div className="col-5">{TICK}</div>
-          </div>
-          <div className="row g-0 justify-content-between">
-            <div className="col-5">{TICK}</div>
-            <div className="col-5">{TICK}</div>
+        <div className={"container"}>
+          <div className="d-flex flex-wrap justify-content-evenly">
+            {ls.map((elem) => {
+              return TICK;
+            })}
           </div>
         </div>
       </div>

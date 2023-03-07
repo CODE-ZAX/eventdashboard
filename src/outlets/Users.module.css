@@ -5,6 +5,10 @@
   background-color: var(--primaryColor);
   color: #fff;
 }
+.btnCustom:hover {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
 .page a {
   color: var(--accentColor) !important;
 }
